@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/chat_item_Id">
+
+    <ImageView
+        android:layout_height="56dp"
+        android:layout_width="56dp"
+        android:src="@drawable/male"
+        android:id="@+id/img_chat"/>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Profile Nmae_chat"
+            android:id="@+id/name_chat_Id"
+            android:textColor="#070000"/>
+        <TextView
+            android:textColor="#090000"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Last message"
+            android:id="@+id/last_msg_chat_Id"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="end">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_status"
+            android:background="@android:color/white"
+            android:id="@+id/profile_status_chat"/>
+    </LinearLayout>
+
+</LinearLayout>

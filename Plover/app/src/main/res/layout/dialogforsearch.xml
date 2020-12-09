@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#232323"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/search_dialog_name_Id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Contact Name"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:id="@+id/search_dialog_phone_Id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Phone No."
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+        <Button
+            android:id="@+id/search_dialog_req_accept_btn_Id"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:text="Accept"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_ok"
+            android:drawablePadding="20dp"
+            android:textAlignment="center"
+            android:padding="20dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/search_dialog_req_cancel_btn_Id"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:text="Cancel"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1px"
+            android:drawableLeft="@drawable/ic_cancel"
+            android:drawablePadding="20dp"
+            android:textAlignment="center"
+            android:padding="20dp"
+            android:layout_weight="1"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/search_dialog_req_send_btn_Id"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:text="Send request"
+            android:layout_marginTop="1px"
+            android:drawableLeft="@mipmap/ic_action_add_person"
+            android:drawablePadding="20dp"
+            android:textAlignment="center"
+            android:padding="20dp"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/search_dialog_image_Id"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@drawable/male"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"/>
+
+</RelativeLayout>

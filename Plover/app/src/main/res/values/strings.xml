@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Plover</string>
+    <string name="action_search">Search</string>
+    <string name="action_help">Help</string>
+    <string name="action_check_updates">Undo</string>
+    <string name="action_location_found">Location</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="search_hint">search</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_signout">Sign Out</string>
+    <string name="action_web">About</string>
+    <string name="action_contactus">Contact Us</string>
+    <string name="action_contactus_string">For any Query please contact\nEmail:alensamsa3@gmail.com</string>
+    <string name="action_about">You can contact with anyone who has an account on this app with this
+        application but before that you have to open an account with your phone number on this application and send him a
+        friend request searching from searchbar obviously he has to accept your friend request. Thank you @Amsa</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

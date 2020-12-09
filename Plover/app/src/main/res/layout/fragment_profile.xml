@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="#ffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Profile">
+
+        <ImageView
+            android:id="@+id/profilePictureimageViewId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/profileGenderTextViewId"
+            android:layout_width="271dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Gender"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/profileMobileTextViewId"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profileMobileTextViewId"
+            app:layout_constraintTop_toBottomOf="@+id/profileMobileTextViewId"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/profileIdTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Id----------------------------------------------------"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/profileGenderTextViewId"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profileGenderTextViewId"
+            app:layout_constraintTop_toBottomOf="@+id/profileGenderTextViewId"
+            app:layout_constraintVertical_bias="0.058" />
+
+        <TextView
+            android:id="@+id/profileMobileTextViewId"
+            android:layout_width="271dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Phone No."
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/profileNameTextViewId"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profileNameTextViewId"
+            app:layout_constraintTop_toBottomOf="@+id/profileNameTextViewId"
+            app:layout_constraintVertical_bias="0.067" />
+
+        <TextView
+            android:id="@+id/profileNameTextViewId"
+            android:layout_width="271dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:hint="Name"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/profilePictureimageViewId"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/profilePictureimageViewId"
+            app:layout_constraintTop_toBottomOf="@+id/profilePictureimageViewId"
+            app:layout_constraintVertical_bias="0.034" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011"
+            android:visibility="gone"/>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

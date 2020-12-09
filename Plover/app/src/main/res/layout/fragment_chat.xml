@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactFragment"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="15dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/chat_recyclerviewId">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".ChatFragment"-->
+    <!--android:background="#ffffff">-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="10dp">-->
+
+        <!--<ListView android:layout_height="match_parent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:id="@+id/chatListViewId"-->
+            <!--android:divider="#fff222"-->
+            <!--android:dividerHeight="4dp"-->
+            <!--android:listSelector="#CF1717"/>-->
+
+    <!--</LinearLayout>-->
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <!--&lt;!&ndash;<ListView android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/chatListViewId"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:divider="#fff222"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:dividerHeight="4dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:listSelector="#CF1717"/>&ndash;&gt;-->
+
+<!--</FrameLayout>-->

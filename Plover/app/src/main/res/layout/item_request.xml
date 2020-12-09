@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/request_item_Id">
+
+    <ImageView
+        android:layout_height="56dp"
+        android:layout_width="56dp"
+        android:src="@drawable/male"
+        android:id="@+id/img_request"/>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="request Name"
+            android:id="@+id/name_request_Id"
+            android:textColor="#070000"/>
+        <TextView
+            android:textColor="#090000"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Phone No."
+            android:id="@+id/phone_request_Id"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/request_accept_button_Id"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/white"
+            android:src="@drawable/ic_ok"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

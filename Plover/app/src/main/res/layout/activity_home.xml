@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/chatButtonId"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Chat"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/contactButtonId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="contact"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/profileButtonId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/action_profile"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+    <SearchView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/action_search"
+        android:queryHint="search"
+        android:visibility="gone">
+
+    </SearchView>
+
+    <android.support.design.widget.TabLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorAccent"
+        android:id="@+id/tablayout_id"
+        android:background="@color/colorPrimary">
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeViewHomeId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/viewpager_Id">
+
+    </android.support.v4.view.ViewPager>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+
+        <!--<fragment-->
+            <!--android:name="com.example.chatapp.ChatFragment"-->
+            <!--android:id="@+id/fragmentId"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_width="match_parent">-->
+
+        <!--</fragment>-->
+
+
+    <!--</LinearLayout>-->
+</LinearLayout>

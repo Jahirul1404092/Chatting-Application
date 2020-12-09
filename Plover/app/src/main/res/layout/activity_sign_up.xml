@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SignUp"
+android:orientation="vertical">
+
+<TextView
+    android:id="@+id/enterYourDataTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="Enter your Data"
+    android:textSize="30sp"
+    android:layout_gravity="center"/>
+
+    <ProgressBar
+    android:id="@+id/progressBarsignupId"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:visibility="gone"/>
+<ImageView
+    android:id="@+id/imageSignUpImageViewId"
+    android:layout_width="85dp"
+    android:layout_height="85dp"
+    android:src="@drawable/male"
+    android:layout_gravity="center"/>
+<EditText
+    android:id="@+id/nameSignUpEditTextId"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:ems="10"
+    android:hint="Name"
+    android:inputType="textPersonName"
+    android:textSize="18sp"
+    android:layout_gravity="center"/>
+<EditText
+    android:id="@+id/phoneSignUpEditTextId"
+    android:layout_width="213dp"
+    android:layout_height="50dp"
+    android:ems="10"
+    android:hint="Phone No."
+    android:inputType="phone"
+    android:textSize="18dp"
+    android:layout_gravity="center"/>
+<EditText
+    android:id="@+id/passSignUpEditTextId"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:ems="10"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:textSize="18dp"
+    android:layout_gravity="center"/>
+<EditText
+    android:id="@+id/repassSignUpEditTextId"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:textSize="18dp"
+    android:ems="10"
+    android:hint="Re Enter Password"
+    android:inputType="textPassword"
+    android:layout_gravity="center"/>
+<RadioGroup
+    android:id="@+id/genderSignUpRadioGroupId"
+    android:layout_width="150dp"
+    android:layout_height="80dp"
+    android:layout_gravity="center">
+
+    <RadioButton
+        android:id="@+id/genderMaleId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Male"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/genderFemaleId"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Female"
+        android:textSize="18sp" />
+</RadioGroup>
+
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="5dp">
+    <Button
+        android:id="@+id/signUpbuttonId"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="100dp"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/goSignInButtonIdFP"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="GOSign In"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".SignUp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/enterYourDataTextView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:text="Enter your Data"-->
+    <!--android:textSize="30sp"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/nameSignUpEditTextId"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/nameSignUpEditTextId"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/nameSignUpEditTextId"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="0.072" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageSignUpImageViewId"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:layout_weight="2"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/nameSignUpEditTextId"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/nameSignUpEditTextId"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/nameSignUpEditTextId"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/enterYourDataTextView"-->
+    <!--android:src="@mipmap/ic_action_person"/>-->
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/progressBarsignupId"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_weight="0.16"-->
+    <!--android:visibility="gone"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/nameSignUpEditTextId"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Name"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:textSize="18sp"-->
+
+    <!--app:layout_constraintBottom_toTopOf="@+id/phoneSignUpEditTextId"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/phoneSignUpEditTextId"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/phoneSignUpEditTextId"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/phoneSignUpEditTextId"-->
+    <!--android:layout_width="213dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginTop="224dp"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Phone No."-->
+    <!--android:inputType="phone"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/passSignUpEditTextId"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/passSignUpEditTextId"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/passSignUpEditTextId"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--android:textSize="18dp"/>-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/passSignUpEditTextId"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginTop="300dp"-->
+    <!--android:layout_marginBottom="2dp"-->
+
+    <!--android:ems="10"-->
+    <!--android:hint="Password"-->
+    <!--android:inputType="textPassword"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/repassSignUpEditTextId"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/repassSignUpEditTextId"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/repassSignUpEditTextId"-->
+
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="0.945"-->
+    <!--android:textSize="18dp"/>-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/repassSignUpEditTextId"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:textSize="18dp"-->
+    <!--android:ems="10"-->
+
+    <!--android:hint="Re Enter Password"-->
+    <!--android:inputType="textPassword"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/genderSignUpRadioGroupId"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/genderSignUpRadioGroupId"-->
+    <!--app:layout_constraintHorizontal_bias="0.428"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/genderSignUpRadioGroupId"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--<RadioGroup-->
+    <!--android:id="@+id/genderSignUpRadioGroupId"-->
+    <!--android:layout_width="178dp"-->
+    <!--android:layout_height="87dp"-->
+    <!--android:layout_marginTop="356dp"-->
+    <!--android:layout_marginEnd="60dp"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/signUpbuttonId"-->
+    <!--app:layout_constraintHorizontal_bias="0.288"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/signUpbuttonId"-->
+
+    <!--app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/genderMaleId"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Male"-->
+    <!--android:textSize="18sp" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/genderFemaleId"-->
+    <!--android:layout_width="122dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Female"-->
+    <!--android:textSize="18sp" />-->
+    <!--</RadioGroup>-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/signUpbuttonId"-->
+    <!--android:layout_width="96dp"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginBottom="32dp"-->
+    <!--android:text="Sign Up"-->
+    <!--android:textSize="18sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.498"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/genderSignUpRadioGroupId"-->
+    <!--app:layout_constraintVertical_bias="1.0"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/goSignInButtonIdFP"-->
+    <!--android:layout_width="96dp"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginBottom="32dp"-->
+    <!--android:text="Sign In"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.478"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/signUpbuttonId"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="1.0" />-->
+
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+
+
+
+
+
+
+
+
+
+
